@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("https://i1.wp.com/365tips.be/wp-content/uploads/2021/10/Flow-1-scaled.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* navegation */
+.nav__container {
+  display: flex;
+  column-gap: 10px;
+  padding: 5px;
+  background: rgba(43, 62, 84, 0.742);
+}
+
+.nav__container a {
+  color: white;
+  text-decoration: none;
+}
+.nav__container > div {
+  display: flex;
+}
+.nav__container ul {
+  display: flex;
+}
+.nav__container__navegation {
+  display: flex;
+  list-style: none;
+  column-gap: 15px;
+}
+/* footer */
+.footer__container {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  padding: 5px;
+  padding: 5px;
+  background: rgba(43, 62, 84, 0.742);
+}
+.footer__container img {
+  width: 25px;
+}
+.footer__container__position {
+  width: 98%;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 10px;
+  align-items: center;
+}
+.footer__container__position > div {
+  display: flex;
+  align-items: center;
+}
+.poweredby {
+  color: rgb(201, 201, 201);
+  font-style: italic;
+}
+.poweredby a {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(95, 155, 233);
+}
+/*  Crafting */
+.crafting__container {
+  box-shadow: 0px 0px 50px rgb(224, 229, 229);
+  border: 1px solid rgb(224, 229, 229);
+  margin: 25px auto;
+  width: 90%;
+  height: 78vh;
+  padding: 20px 25px;
+  border-radius: 15px;
+  background: rgba(43, 62, 84, 0.742);
+  backdrop-filter: blur(10px);
+  color: rgb(237, 237, 237);
+}
+
+.crafting__container__position {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.crafting__container__position__cell {
+  margin: 10px;
+  height: 30vh;
+  border: 2px solid rgb(167, 167, 167);
+  padding: 15px 20px;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+.crafting__container__position__cell p {
+  font-size: 14px;
+}
+
+.Hacer {
+  text-align: center;
+  background-color: rgb(100, 211, 100);
+  width: 100px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: black;
+}
+.Decidir {
+  text-align: center;
+  background-color: rgb(100, 211, 196);
+  width: 100px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: black;
+}
+.Delegar {
+  text-align: center;
+  background-color: rgb(200, 211, 100);
+  width: 100px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: black;
+}
+.Eliminar {
+  text-align: center;
+  background-color: rgb(241, 87, 87);
+  width: 100px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: rgb(243, 220, 220);
+}
+.list__container {
+  margin: 15px;
+}
+.list__container li {
+  margin: 15px;
+}
+
+.archived {
+  color: rgb(173, 171, 171);
+}
+.greenCell {
+  background-color: rgba(46, 142, 46, 0.683);
+}
+
+.blueCell {
+  background-color: rgba(12, 160, 155, 0.436);
+}
+.yellowCell {
+  background-color: rgba(195, 195, 12, 0.388);
+}
+.redCell {
+  background-color: rgba(195, 46, 12, 0.388);
+}
