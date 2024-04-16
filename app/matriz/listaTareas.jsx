@@ -1,6 +1,10 @@
 "use client";
 
+import { useEffect } from "react";
+
 export const ListadeTareas__Cliente = ({ dataFiltered, title }) => {
+  useEffect(() => {console.log("Hola")}, [dataFiltered]);
+
   return (
     <section>
       <div className={title}>

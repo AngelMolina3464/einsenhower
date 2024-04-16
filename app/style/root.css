@@ -4,7 +4,6 @@
 }
 
 body {
-  background: url("https://i1.wp.com/365tips.be/wp-content/uploads/2021/10/Flow-1-scaled.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -13,7 +12,7 @@ body {
   display: flex;
   column-gap: 10px;
   padding: 5px;
-  background: rgba(43, 62, 84, 0.742);
+  background: rgba(6, 6, 6, 0.878);
 }
 
 .nav__container a {
@@ -38,7 +37,7 @@ body {
   position: fixed;
   padding: 5px;
   padding: 5px;
-  background: rgba(43, 62, 84, 0.742);
+  background: rgba(6, 6, 6, 0.878);
 }
 .footer__container img {
   width: 25px;
@@ -72,7 +71,7 @@ body {
   height: 78vh;
   padding: 20px 25px;
   border-radius: 15px;
-  background: rgba(43, 62, 84, 0.742);
+  background: rgba(6, 6, 6, 0.878);
   backdrop-filter: blur(10px);
   color: rgb(237, 237, 237);
 }
@@ -147,4 +146,41 @@ body {
 }
 .redCell {
   background-color: rgba(195, 46, 12, 0.388);
+}
+
+/* Cliente Form */
+
+.CreaCliente__container {
+  width: 70%;
+  margin: 10px auto;
+  border: 2px solid rgb(229, 239, 229);
+  border-radius: 15px;
+  padding: 10px 25px;
+}
+.CreaCliente__container > form {
+  display: flex;
+  flex-direction: column;
+}
+.CreaCliente__container label {
+  margin: 7px 0px;
+}
+
+.CreaCliente__container input {
+  font-size: 16px;
+  padding: 7px;
+  width: 60%;
+  margin: 7px 0px;
+}
+
+.CreaCliente__container textarea {
+  font-size: 16px;
+  padding: 7px;
+  width: 60%;
+  margin: 7px 0px;
+}
+.CreaCliente__container select {
+  font-size: 16px;
+  width: 25%;
+  margin: 7px 0px;
+  padding: 7px;
 }

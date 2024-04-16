@@ -1,22 +1,22 @@
 import { ListadeTareas__Cliente } from "./listaTareas";
-import { info } from "@/app/data/emula.js";
+import { obtenerDatos } from "../data/getTareas.js";
 
-const infoUser = info.filter((element) => element.createdBy == "Programador X");
+const infoUser = await obtenerDatos("Tareas", "createdBy", "User Final");
 
 const infoHacer = infoUser.filter(
-  (element) => element.importancia && element.urgencia
+  (element) => element.importancia == "Si" && element.urgencia == "Si"
 );
 
 const infoDecidir = infoUser.filter(
-  (element) => element.importancia && element.urgencia == false
+  (element) => element.importancia == "Si" && element.urgencia == "No"
 );
 
 const infoDelegar = infoUser.filter(
-  (element) => element.importancia == false && element.urgencia
+  (element) => element.importancia == "No" && element.urgencia == "Si"
 );
 
 const infoEliminar = infoUser.filter(
-  (element) => element.importancia == false && element.urgencia == false
+  (element) => element.importancia == "No" && element.urgencia == "No"
 );
 
 export default function Matriz() {
