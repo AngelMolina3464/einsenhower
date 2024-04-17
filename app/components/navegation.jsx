@@ -1,10 +1,11 @@
 import Link from "next/link";
+import Image from "next/image"; 
 
 export default function Navegation() {
   return (
     <nav className="nav__container">
       <div>
-        <img src="" alt="Logo" />
+        <Image src="" alt="Logo" width={30} height={30} />
         <p>Name Proyect</p>
       </div>
 

@@ -3,7 +3,9 @@
 import { useEffect } from "react";
 
 export const ListadeTareas__Cliente = ({ dataFiltered, title }) => {
-  useEffect(() => {console.log("Hola")}, [dataFiltered]);
+  useEffect(() => {
+    console.log("Hola");
+  }, [dataFiltered]);
 
   return (
     <section>
@@ -12,14 +14,14 @@ export const ListadeTareas__Cliente = ({ dataFiltered, title }) => {
       </div>
 
       <ol className="list__container">
-        {dataFiltered.map((element) =>
+        {dataFiltered.map((element, index) =>
           element.active ? (
-            <li>
+            <li key={index}>
               <strong>{element.concepto}</strong>
               <p>{element.detalles}</p>
             </li>
           ) : (
-            <li className="archived">
+            <li key={index} className="archived">
               <strong>{element.concepto}</strong>
               <p>{element.detalles}</p>
             </li>

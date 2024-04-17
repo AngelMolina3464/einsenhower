@@ -39,9 +39,6 @@ body {
   padding: 5px;
   background: rgba(6, 6, 6, 0.878);
 }
-.footer__container img {
-  width: 25px;
-}
 .footer__container__position {
   width: 98%;
   display: flex;
